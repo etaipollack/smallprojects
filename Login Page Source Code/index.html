@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Pr0xi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-yellow.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+    <script src="dialog-polyfill.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+
+
+    <!-- LOGIN DIOLOG -->
+
+    <dialog id="loginDialog" class="mdl-dialog">
+      <h4 class="mdl-dialog__title">Sign In</h4>
+      <div class="mdl-dialog__content">
+        <p id="loginError">Error</p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="loginEmail">
+          <label class="mdl-textfield__label" for="sample3">Email</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="password"! id="loginPassword">
+          <label class="mdl-textfield__label" for="sample3">Password</label>
+        </div>
+      </div>
+      <div class="mdl-dialog__actions">
+        <!-- Colored raised button -->
+        <button id="loginBtn"class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+          Sign In
+        </button>
+        <div id="loginProgress"class="mdl-spinner mdl-js-spinner is-active"></div>
+      </div>
+      <p>By logging into Gold Hackz VIP you accept our <a href="tos.txt">Terms of Services</a></p>
+    </dialog>
+
+    <div class="login-cover">
+
+      <!-- MDL Spinner Component -->
+      <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+
+    </div>
+
+
+    <!-- MAIN PAGE CONTENT -->
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">Gold Hackz Site
+            <span class="page-title-span"> | </span>
+            <span class="page-title-span"> Home </span>
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            Sign Out <i class="button-right-icon material-icons">account_circle</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="#">VIP Section</a>
+        </nav>
+      </div>
+
+      <div class="mdl-layout__content">
+      <center><p>Stuff</p></center>
+        <a name="top"></a>
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDjaklqcZSHx2QkirAX3zTgCXb_X-y-r0I",
+        authDomain: "gold-hackz.firebaseapp.com",
+        databaseURL: "https://gold-hackz.firebaseio.com",
+        storageBucket: "gold-hackz.appspot.com",
+        messagingSenderId: "207719510058"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
